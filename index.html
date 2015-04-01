@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Daniel Charles Tan</title>
+		<title>Daniel Charles Tan - Home</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -14,6 +14,55 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+				$(".various").fancybox({
+					maxWidth	: 800,
+					maxHeight	: 600,
+					fitToView	: false,
+					width		: '70%',
+					height		: '70%',
+					autoSize	: false,
+					closeClick	: false,
+					openEffect	: 'none',
+					closeEffect	: 'none'
+				});
+				$(".fancybox-thumb").fancybox({
+					prevEffect	: 'none',
+					nextEffect	: 'none',
+					helpers	: {
+						title	: {
+							type: 'outside'
+						},
+						thumbs	: {
+							width	: 50,
+							height	: 50
+			}
+		}
+	});
+			});
+
+		</script>
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -30,9 +79,13 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#me" class="icon fa-home active"><span>Home</span></a>
+						<a href="/images/Resume.pdf" class="icon fa-file"><span>Resume</span></a>
 						<a href="#work" class="icon fa-folder"><span>Work</span></a>
+						<a href="https://www.github.com/ssshi" class="icon fa-github"><span>GitHub</span></a>
+						<a href="https://www.linkedin.com/pub/sara-shi/86/84b/b80" class="icon fa-linkedin-square"><span>Linkedin</span></a>
+						<!--<a href="sarashistheworld.tumblr.com" class="icon fa-plane"><span>Travel blog</span></a>-->
 						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-						<a href="#" class="icon fa-twitter"><span>Twitter</span></a>
+
 					</nav>
 
 				<!-- Main -->
@@ -41,8 +94,8 @@
 						<!-- Me -->
 							<article id="me" class="panel">
 								<header>
-									<h1>Daniel Charles Tan</h1>
-									<p>Pomona College '16, Economics</p>
+									<h1>Sara Shi</h1>
+									<p>	Pomona College Student</p>
 								</header>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
@@ -55,99 +108,41 @@
 								<header>
 									<h2>Work</h2>
 								</header>
-								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit. 
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
-									luctus elit eget interdum.
-								</p>
 								<section>
 									<div class="row">
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+										<div class="5u">
+											<a class="various image fit" data-fancybox-type="iframe" href="hhmihmc.html"> <img src="images/hhmihmc.gif" alt="" /> </a>
 										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-									</div>
-									<div class="row">
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-									</div>
-									<div class="row">
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-									</div>
-									<div class="row">
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="4u">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+										<div class="-2u 5u">
+											<a class="various image fit" data-fancybox-type="iframe" href="hackathon.html"> <img src="images/hackathon.gif" alt="" /> </a>
 										</div>
 									</div>
 								</section>
 							</article>
 
+						<!-- hackathon page -->
+						
 						<!-- Contact -->
 							<article id="contact" class="panel">
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="6u">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="6u">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-										</div>
-										<div class="row">
-											<div class="12u">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-										</div>
-										<div class="row">
-											<div class="12u">
-												<textarea name="message" placeholder="Message" rows="8"></textarea>
-											</div>
-										</div>
-										<div class="row">
-											<div class="12u">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
+								<p> sara.shi @ gmail.com <br>
+									510.394.8444
+								</p>
+								<p> 
+									170 E. 6th St. #1624 <br>
+									Claremont, CA 91711
+								</p>
 							</article>
+
 
 					</div>
 		
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; 2015.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; 2014 </li><li>Design: Astral @ <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 		
