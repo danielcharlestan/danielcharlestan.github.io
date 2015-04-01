@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+		Spring 2014 5CHackathon Project: WikiWeb
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style>
+	@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
+	@import url('font-awesome.min.css');
+	body {font-family: 'Source Sans Pro', sans-serif;}
+
+  img { width:100%; }
+}
+</style>
+
+</head>
+<body>
+	<h1>Spring 2014 5CHackathon Project: WikiWeb</h1>
+	<p>
+		I participated in my first hackathon this past spring, April 12th, 2014. My friend James Waller and I came up with the idea of a "Wikipedia web" where we could explore a search topic and its closest related linked terms in the form of a web. We were interested in looking at all the linked terms, and the number of times the word of that term showed up on the page. Thus, after a long night of coding, we came out of the hacakthon with the project, WikiWeb!
+	</p>
+	<p>
+		With the Wikipedia page and Jsoup, we would pull the source code of the page and save it to a .txt file. From the source code .txt file, we would scan each line and search for linked terms and save them in an ArrayList. With a separate .txt for the actual text of the Wikipedia page, we would then iterate through the ArrayList of linked terms, searching the entire Wikipedia page for that term and updating a counter for each linked term. Finally at the end, we used Merge Sort to organize the ArrayList of terms, and pulled out the 12 most related terms to the original search term (though theoretically, since we have an organized list, we could display more, or all of the linked terms on a page!).
+	</p>
+	<p>
+		The end product allows you to enter a search term and see the resulting web of related linked terms, in order of closest related to farthest related in terms of physical distance from the original search term. Clicking on the center term opens up the actual Wikipedia page for the term, and clicking on any other linked term generates the WikiWeb for that term.
+
+	</p>
+	<p>
+		See the code at my GitHub <a href="https://github.com/ssshi/WikiWeb">here</a>!
+	</p>
+	<p>
+		See it in action below!
+	<p>
+		<div style="text-align:center">
+			<iframe width="560" height="315" align="middle"
+			src="http://youtube.com/embed/H-S_PvjW9b8">
+			</iframe>
+		</div>
+	</p>
+
+</body>
+</html>
